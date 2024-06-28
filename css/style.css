@@ -1,0 +1,52 @@
+:root{
+    --color-primary-dark: #011c44;
+    --color-primary-light: #fff;
+    --color-brand:#2b7fff;
+}
+/* Base */
+body{
+    color: var(--color-primary-dark);
+}
+ul{
+    list-style: none;
+}
+/* Header */
+.navigation_link {
+    text-decoration: none;
+}
+
+.navigation_link:hover {
+    color: var(--color-brand);
+}
+/* Hero section */
+.button{
+    background-color: var(--color-brand);
+    border-radius: 32px;
+    border: 1px solid var(--color-brand);
+    padding: 16px 32px;
+    width: 219px;
+    height: 53px;
+    color: var(--color-primary-light);
+}
+.button:hover{
+    background-color: transparent;
+    cursor: pointer;
+    color: var(--color-brand);
+}
+.hero_title{
+    color: var(--color-brand);
+    font-size: 140px;
+}
+.accent{
+    color: var(--color-brand);
+}
+
+/* Footer */
+.footer_nav_link{
+    text-decoration: none;
+    color: var(--color-primary-light);
+}
+.footer_nav_link:hover{
+    color: var(--color-brand);
+    cursor: pointer;
+}
