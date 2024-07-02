@@ -47,6 +47,29 @@ footer{
     margin: 0 auto;
 }
 /* Header */
+
+.header_container{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 32px 0;
+}
+.header_nav{
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+}
+.header_menu{
+    display: flex;
+    gap: 56px;
+    flex-grow: 1;
+    justify-content: center;
+    padding-left: 0;
+}
+.header_address{
+    display: flex;
+    gap: 32px;
+}
 .navigation_link {
     color: var(--color-primary-dark);
     text-decoration: none;
@@ -55,11 +78,32 @@ footer{
 .navigation_link:hover {
     color: var(--color-brand);
 }
+
 /* Hero section */
+
+.main_section{
+    padding-top: 16px;
+}
+.hero_section{
+    display: flex;
+    flex-direction: column;
+    padding-left: 100px;
+    max-width: 530px;
+    width: 100%;
+}
 .brand_clinick {
     font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+.button_with_descr{
+    align-items: center;
+    max-width: 238px;
+    width: 100%;
 }
 .button_description{
+    margin: 14px 18px 0 0;
+    text-align: center;
     font-size: 12px;
     line-height: 150%;
 }
@@ -72,6 +116,8 @@ footer{
     width: 219px;
     height: 53px;
     color: var(--color-primary-light);
+    font-weight: 600;
+    font-size: 16px;
 }
 .button:hover{
     background-color: transparent;
@@ -79,11 +125,12 @@ footer{
     color: var(--color-brand);
 }
 .hero_title{
-    margin-bottom: 0;
+    margin: 16px 0 40px 0;
     color: var(--color-brand);
     font-family: var(--third-family);
     font-size: 140px;
     font-weight: 700;
+    line-height: 0.8;
     
 }
 .accent{
@@ -92,6 +139,11 @@ footer{
 
 /* about_us_section */
 
+.about_us_title{
+    padding-right: 180px;
+    line-height: 1.2;
+    margin-bottom: 40px;
+}
 .about_us_section{
     line-height: 173%;
 }
@@ -99,19 +151,52 @@ footer{
     font-weight: 600;
     text-transform: capitalize;
 }
-
+.about_us_container{
+    display: flex;
+    gap: 40px;
+}
+.about_us_descr{
+    max-width: 640px;
+    width: 100%;  
+}
+.about_us_descr p{
+    margin-bottom: 40px;
+}
+.about_us_images{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 /* why_do_we_section */
 
 .why_we_cards{
     font-size: 18px;
     line-height: 133%;
 }
-
+.girl_img{
+    width: 327px;
+    height: 327px;
+    border-radius: 50%;
+}
 /* our_procedurce_section */
 
+.procedurce_cards{
+    padding: 344px 72px 24px 112px;
+    border: 1px solid var(--color-brand);
+    border-radius: 24px;
+
+}
 .article_card{
     line-height: 118%;
     color: var(--color-primary-light);
+}
+.procedurce_list{
+    display: flex;
+    gap: 16px;
+}
+.procedurce_title{
+    flex-basis: calc((100% - 32px) / 3);
 }
 /* Footer */
 .footer_nav_link{

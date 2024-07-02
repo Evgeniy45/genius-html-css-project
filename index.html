@@ -12,47 +12,63 @@
 <body>
     <header>
         <div class="container">
-            <a href="/">
-                <img src="./images/logo.svg" alt="Логотип косметологічної клініки">
-            </a>
-            <nav>
-                <ul>
-                    <li><a class="navigation_link" href="#about_us_section">Про нас</a></li>
-                    <li><a class="navigation_link" href="#why_do_we_section">Чому ми</a></li>
-                    <li><a class="navigation_link" href="#our_procedurce_section">Наші процедури</a></li>
-                    <li><a class="navigation_link" href="#contacts_section">Контакти</a></li>
-                </ul>
-            </nav>
-            <address>
-                <ul>
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
-                </ul>
-            </address>
+            <div class="header_container">
+                <nav class="header_nav">
+                    <a href="/">
+                        <img src="./images/logo.svg" alt="Логотип косметологічної клініки">
+                    </a>
+                    <ul class="header_menu">
+                        <li><a class="navigation_link" href="#about_us_section">Про нас</a></li>
+                        <li><a class="navigation_link" href="#why_do_we_section">Чому ми</a></li>
+                        <li><a class="navigation_link" href="#our_procedurce_section">Наші процедури</a></li>
+                        <li><a class="navigation_link" href="#contacts_section">Контакти</a></li>
+                    </ul>
+                </nav>
+                <address>
+                    <ul class="header_address">
+                        <li><a href="#">!</a></li>
+                        <li><a href="#">!</a></li>
+                        <li><a href="#">!</a></li>
+                    </ul>
+                </address>
+            </div>
+
         </div>
     </header>
     <main>
-        <section class="section" id="main_section">
+        <section class="section main_section" id="main_section">
             <div class="container">
-                <p class="brand_clinick">Косметологічна клініка</p>
-                <h1 class="hero_title">Beauty Zone</h1>
-                <button type="button" class="button">Замовити дзвінок</button>
-                <p class="button_description">Запишись та отримай безкоштовну консультацію нашого косметолога</p>
+                <div class="hero_section">
+                    <p class="brand_clinick">Косметологічна клініка</p>
+                    <h1 class="hero_title">Beauty Zone</h1>
+                    <div class="button_with_descr">
+                        <button type="button" class="button">Замовити дзвінок</button>
+                        <p class="button_description">Запишись та отримай безкоштовну консультацію нашого косметолога
+                        </p>
+                    </div>
+                </div>
             </div>
         </section>
         <section class="section" class="about_us_section" id="about_us_section">
             <div class="container">
-                <h2>Перевтілюйтесь в <span class="accent">Beauty Zone!</span></h2>
-                <p>Наша косметологічна клініка пропонує вам професійні послуги
-                    з догляду за шкірою обличчя та тіла.</p>
-                <p>B <b class="brand">beauty zone</b> ми гарантуємо найвищі стандарти якості
-                    та приємний сервіс. Наші косметологічні процедури та препарати допоможуть вам підтримувати свою
-                    красу та
-                    молодість.
-                    З нами краса назавжди!</p>
-                <img src="./images/girl_before_procedurce.jpg" alt="Дівчина до процедури">
-                <img src="./images/girl_after_procedurce.jpg" alt="Дівчина після процедури">
+                <div class="about_us_container">
+                    <div class="about_us_descr">
+                        <h2 class="about_us_title">Перевтілюйтесь в <span class="accent">Beauty Zone!</span></h2>
+                        <p>Наша косметологічна клініка пропонує вам професійні послуги
+                            з догляду за шкірою обличчя та тіла.</p>
+                        <p>B <b class="brand">beauty zone</b> ми гарантуємо найвищі стандарти якості
+                            та приємний сервіс. Наші косметологічні процедури та препарати допоможуть вам
+                            підтримувати
+                            свою
+                            красу та
+                            молодість. <br>
+                            З нами краса назавжди!</p>
+                    </div>
+                    <div class="about_us_images">
+                        <img class="girl_img" src="./images/girl_after_procedurce.jpg" alt="Дівчина після процедури">
+                        <img class="girl_img" src="./images/girl_before_procedurce.jpg" alt="Дівчина до процедури">
+                    </div>
+                </div>
             </div>
         </section>
         <section class="section" id="why_do_we_section">
@@ -84,19 +100,19 @@
         <section class="section" id="our_procedurce_section">
             <div class="container">
                 <h2>Наші <span class="accent">процедури</span></h2>
-                <ul>
-                    <li>
-                        <article>
+                <ul class="procedurce_list">
+                    <li class="procedurce_title">
+                        <article class="procedurce_cards">
                             <p class="article_card">Маски для обличчя</p>
                         </article>
                     </li>
-                    <li>
-                        <article>
+                    <li class="procedurce_title">
+                        <article class="procedurce_cards">
                             <p class="article_card">Ін'єкції для обличч</p>
                         </article>
                     </li>
-                    <li>
-                        <article>
+                    <li class="procedurce_title">
+                        <article class="procedurce_cards">
                             <p class="article_card">Очищення обличчя</p>
                         </article>
                     </li>
