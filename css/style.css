@@ -168,24 +168,53 @@ footer{
     justify-content: center;
     align-items: center;
 }
-/* why_do_we_section */
-
-.why_we_cards{
-    font-size: 18px;
-    line-height: 133%;
-}
-.girl_img{
+.girl_img {
     width: 327px;
     height: 327px;
     border-radius: 50%;
 }
+/* why_do_we_section */
+
+.why_do_we_section{
+    background-color: lightblue;
+}
+.why_do_we_title{
+    margin-bottom: 48px;
+   text-align: center;
+   line-height: 1.2;
+}
+.why_do_we_list{
+    display: flex;
+    justify-content: center;
+    gap: 56px;
+   margin: 0;
+}
+.why_we_cards{
+    padding: 24px 32px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 133%;
+    font-weight: 400;
+    background-color: var(--color-primary-light);
+    border-radius: 32px;
+    max-width:316px;
+    width: 100%;
+    color: #000;
+}
+.why_we_cards p{
+    margin-top: 8px;
+    margin-bottom: 0;
+}
 /* our_procedurce_section */
 
+.our_procedurce_title{
+    margin-bottom: 48px;
+    text-align: center;
+}
 .procedurce_cards{
     padding: 344px 72px 24px 112px;
     border: 1px solid var(--color-brand);
     border-radius: 24px;
-
 }
 .article_card{
     line-height: 118%;
@@ -197,6 +226,13 @@ footer{
 }
 .procedurce_title{
     flex-basis: calc((100% - 32px) / 3);
+}
+
+/* Contacts section */
+
+.contacts_title{
+    margin-bottom: 48px;
+    text-align: center;
 }
 /* Footer */
 .footer_nav_link{
