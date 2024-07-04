@@ -78,7 +78,13 @@ footer{
 .navigation_link:hover {
     color: var(--color-brand);
 }
-
+.header_icon{
+    fill: var(--color-primary-dark);
+}
+.header_icon:hover{
+    cursor: pointer;
+    fill: var(--color-brand);
+}
 /* Hero section */
 
 .main_section{
@@ -233,7 +239,24 @@ footer{
 .procedurce_title{
     flex-basis: calc((100% - 32px) / 3);
 }
-
+.carousel_button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    background-color: transparent;
+    fill: var(--color-primary-dark);
+    border: 1px solid var(--color-primary-dark);
+    border-radius: 50%;
+    cursor: pointer;
+}
+.carousel_button:hover{
+    background-color: var(--color-brand);
+    border: 1px solid var(--color-primary-light);
+    fill: var(--color-primary-light);
+}
 /* Contacts section */
 
 .footer{
@@ -266,4 +289,11 @@ footer{
 footer p{
     color: var(--color-secondary-light);
     font-size: 13px;
+}
+.address_icon{
+    fill: var(--color-primary-light);
+}
+.address_icon:hover{
+    cursor: pointer;
+    fill: var(--color-brand);
 }
