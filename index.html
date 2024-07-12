@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <header>
+    <header class="header">
         <div class="container">
             <div class="header_container">
                 <nav class="header_nav">
@@ -83,8 +83,9 @@
                             З нами краса назавжди!</p>
                     </div>
                     <div class="about_us_images">
-                        <img class="girl_img" src="./images/girl_after_procedurce.jpg" alt="Дівчина після процедури">
-                        <img class="girl_img" src="./images/girl_before_procedurce.jpg" alt="Дівчина до процедури">
+                        <img class="girl_before" src="./images/girl_before_procedurce.jpg"
+                            alt="Дівчина після процедури">
+                        <img class="girl_after" src="./images/girl_after_procedurce.jpg" alt="Дівчина до процедури">
                     </div>
                 </div>
             </div>
@@ -133,21 +134,21 @@
                     <ul class="procedurce_list">
                         <li class="procedurce_title">
                             <article class="procedurce_cards">
-                                <p class="article_card">Маски для обличчя</p>
+                                <p class="article_text">Маски для обличчя</p>
                             </article>
                         </li>
                         <li class="procedurce_title">
                             <article class="procedurce_cards">
-                                <p class="article_card">Ін'єкції для обличч</p>
+                                <p class="article_text">Ін'єкції для обличчя</p>
                             </article>
                         </li>
                         <li class="procedurce_title">
                             <article class="procedurce_cards">
-                                <p class="article_card">Очищення обличчя</p>
+                                <p class="article_text">Очищення обличчя</p>
                             </article>
                         </li>
                     </ul>
-                    <button class="carousel_button" type="button">
+                    <button class="carousel_button next" type="button">
                         <svg width="16" height="16">
                             <use href="./images/icons.svg#icon-Arrow_left"></use>
                         </svg>
@@ -195,27 +196,29 @@
                                 target="_blank">Україна, м.
                                 Київ,вул. Тараса
                                 Шевченка 5</a></li>
-                        <li>
-                            <a href="#">
-                                <svg class="address_icon" width="42" height="42">
-                                    <use href="./images/icons.svg#icon-phone_icon"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <svg class="address_icon" width="42" height="42">
-                                    <use href="./images/icons.svg#icon-facebook_icon"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <svg class="address_icon" width="42" height="42">
-                                    <use href="./images/icons.svg#icon-instagram_icon"></use>
-                                </svg>
-                            </a>
-                        </li>
+                        <div class="footer_address_icons">
+                            <li>
+                                <a href="#">
+                                    <svg class="address_icon" width="42" height="42">
+                                        <use href="./images/icons.svg#icon-phone_icon"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <svg class="address_icon" width="42" height="42">
+                                        <use href="./images/icons.svg#icon-facebook_icon"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <svg class="address_icon" width="42" height="42">
+                                        <use href="./images/icons.svg#icon-instagram_icon"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </div>
                     </ul>
                     <div class="politic_defens">
                         <a class="politic" href="#" target="_blank">Політика конфіденційності</a>
@@ -225,6 +228,12 @@
             </div>
         </div>
     </footer>
+
+    <div class="backdrop">
+        <div class="modal">
+            <button class="modal_close_button" type="button">close</button>
+        </div>
+    </div>
 </body>
 
 </html>
