@@ -160,13 +160,37 @@
             <div class="container">
                 <h2 class="contacts_title">Як нас <span class="accent">знайти</span></h2>
                 <div class="contact_container">
-                    <div class="contact_form">
-                        <!--form  -->
-                    </div>
                     <iframe class="contact_map"
                         src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d40657.857331625426!2d30.4688324!3d50.4389384!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce50853c3c51%3A0x6703d85b0d10b524!2z0L_QtdGALiDQotCw0YDQsNGB0LAg0KjQtdCy0YfQtdC90LrQviwgNSwg0JrQuNC10LIsIDAyMDAw!5e0!3m2!1sru!2sua!4v1719501331786!5m2!1sru!2sua"
                         width="600" height="450" allowfullscreen="" loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <div class="contact_form">
+                        <form name="contact_form" autocomplete="off">
+                            <div class="form_field">
+                                <label class="form_label visualy_hidden" for="user_name"></label>
+                                <input class="form_input" type="text" name="user_name" id="user_name"
+                                    placeholder="Ваше ім'я та прізвище">
+                            </div>
+
+                            <div class="form_field">
+                                <label class="form_label visualy_hidden" for="user_tel"></label>
+                                <input class="form_input" type="tel" name="user_tel" id="user_tel"
+                                    placeholder="Ваш номер телефону">
+                            </div>
+
+                            <div class="form_field">
+                                <label class="form_label visualy_hidden" for="user_email"></label>
+                                <input class="form_input" type="email" name="user_email" id="user_email"
+                                    placeholder="Ваша електронна пошта">
+                            </div>
+
+                            <button class="form_button button" type="submit">Записатись безкоштовно</button>
+                            <p class="form_rules">Натискаючи на кнопку я погоджуюсь з <a class="form_rules_link"
+                                    href="#">політикою
+                                    конфіденційності</a></p>
+                        </form>
+                    </div>
+
                 </div>
 
             </div>
@@ -232,6 +256,31 @@
     <div class="backdrop">
         <div class="modal">
             <button class="modal_close_button" type="button">close</button>
+            <h2 class="modal_header">Замовити дзвінок</h2>
+            <p class="modal_form_description">Запишіться <span class="accent">безкоштовно</span> та отримайте подарунок
+            </p>
+            <form name="modal_form" autocomplete="off" novalidate>
+                <div class="form_field">
+                    <label class="form_label visualy_hidden" for="user_name"></label>
+                    <input class="form_input" type="text" name="user_name" id="user_name"
+                        placeholder="Ваше ім'я та прізвище">
+                </div>
+
+                <div class="form_field">
+                    <label class="form_label visualy_hidden" for="user_tel"></label>
+                    <input class="form_input" type="tel" name="user_tel" id="user_tel" placeholder="Ваш номер телефону">
+                </div>
+
+                <div class="form_field">
+                    <label class="form_label visualy_hidden" for="user_email"></label>
+                    <input class="form_input" type="email" name="user_email" id="user_email"
+                        placeholder="Ваша електронна пошта">
+                </div>
+
+                <button class="form_button button" type="submit">Записатись безкоштовно</button>
+                <p class="form_rules">Натискаючи на кнопку я погоджуюсь з <a class="form_rules_link" href="#">політикою
+                        конфіденційності</a></p>
+            </form>
         </div>
     </div>
 </body>
