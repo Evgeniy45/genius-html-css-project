@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/fonts.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/main.min.css">
     <title>Beauty Zones</title>
 </head>
 
@@ -134,16 +134,21 @@
                     <ul class="procedurce_list">
                         <li class="procedurce_title">
                             <article class="procedurce_cards">
+                                <img class="carousel_images" src="./images/mask_porcedurce.jpg" alt="Mask porcedurce">
                                 <p class="article_text">Маски для обличчя</p>
                             </article>
                         </li>
                         <li class="procedurce_title">
                             <article class="procedurce_cards">
+                                <img class="carousel_images" src="./images/injection_procedurce.jpg"
+                                    alt="Injection procedurce">
                                 <p class="article_text">Ін'єкції для обличчя</p>
                             </article>
                         </li>
                         <li class="procedurce_title">
                             <article class="procedurce_cards">
+                                <img class="carousel_images" src="./images/clear_face_procedurce.jpg"
+                                    alt="Face-clear procedurce">
                                 <p class="article_text">Очищення обличчя</p>
                             </article>
                         </li>
@@ -253,28 +258,29 @@
         </div>
     </footer>
 
-    <div class="backdrop">
+    <div class="backdrop visualy_hidden">
         <div class="modal">
             <button class="modal_close_button" type="button">close</button>
             <h2 class="modal_header">Замовити дзвінок</h2>
             <p class="modal_form_description">Запишіться <span class="accent">безкоштовно</span> та отримайте подарунок
             </p>
-            <form name="modal_form" autocomplete="off" novalidate>
+            <form name="modal_form" autocomplete="off">
                 <div class="form_field">
                     <label class="form_label visualy_hidden" for="user_name"></label>
                     <input class="form_input" type="text" name="user_name" id="user_name"
-                        placeholder="Ваше ім'я та прізвище">
+                        placeholder="Ваше ім'я та прізвище" required>
                 </div>
 
                 <div class="form_field">
                     <label class="form_label visualy_hidden" for="user_tel"></label>
-                    <input class="form_input" type="tel" name="user_tel" id="user_tel" placeholder="Ваш номер телефону">
+                    <input class="form_input" type="tel" name="user_tel" id="user_tel" placeholder="Ваш номер телефону"
+                        required>
                 </div>
 
                 <div class="form_field">
                     <label class="form_label visualy_hidden" for="user_email"></label>
                     <input class="form_input" type="email" name="user_email" id="user_email"
-                        placeholder="Ваша електронна пошта">
+                        placeholder="Ваша електронна пошта" required>
                 </div>
 
                 <button class="form_button button" type="submit">Записатись безкоштовно</button>

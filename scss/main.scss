@@ -1,72 +1,13 @@
-:root {
-    --color-primary-dark: #011c44;
-    --color-primary-light: #fff;
-    --color-brand: #2b7fff;
-    --color-secondary-light: #747272;
-    --font-family: "Roboto", sans-serif;
-    --second-family: "Poppins", sans-serif;
-    --third-family: "Play", sans-serif;
-}
+@import './utils/fonts';
+@import './utils/variable';
 
-/* Base */
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-}
+@import './base';
 
-body {
-    margin: 0;
-    color: var(--color-primary-dark);
-    font-family: var(--font-family);
-    font-weight: 400;
-    font-size: 22px;
-    line-height: 1.5;
-}
+@import './utils/utils';
 
-address {
-    font-style: normal;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-    margin-top: 0;
-}
-
-h2 {
-    font-family: var(--third-family);
-    font-weight: 700;
-    font-size: 64px;
-}
-
-ul {
-    list-style: none;
-}
-
-a {
-    display: inline-block;
-}
-
-footer {
-    font-weight: 400;
-    font-size: 16px;
-    color: var(--color-primary-light);
-}
-
-.visualy_hidden {
-    position: absolute;
-    left: -10000px;
-    top: auto;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-}
-
+@import './components/buttons';
+@import './components/header';
+@import './components/hero-section';
 .section {
     padding: 48px 0;
 }
@@ -77,135 +18,10 @@ footer {
     margin: 0 auto;
 
 }
-
-/* Header */
-
-.header {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: rgba(255, 255, 255, 0.5);
-    backdrop-filter: blur(3px);
-}
-
-.header_container {
-    display: flex;
-    align-items: center;
-    gap: 40px;
-}
-
-.header_nav {
-    display: flex;
-    align-items: center;
-    flex-grow: 1;
-}
-
-.header_menu {
-    display: flex;
-    gap: 56px;
-    flex-grow: 1;
-    justify-content: center;
-    padding-left: 0;
-}
-
-
-.header_address_list {
-    display: flex;
-    gap: 32px;
-}
-
-.navigation_link {
-    color: var(--color-primary-dark);
-    text-decoration: none;
-    font-size: 18px;
-    transition: color 0.3s;
-}
-
-.navigation_link:hover {
-    color: var(--color-brand);
-}
-
-.header_icon {
-    margin-top: 4px;
-    fill: var(--color-primary-dark);
-    transition: fill 0.3s;
-}
-
-.header_icon:hover {
-    cursor: pointer;
-    fill: var(--color-brand);
-}
-
-/* Hero section */
-
-.main_section {
-    padding-top: 100px;
-    background-image: linear-gradient(94deg, #fff 30%, rgba(255, 255, 255, 0.85) 40.08%, rgba(255, 255, 255, 0.19) 52.74%, rgba(255, 255, 255, 0) 74.46%), url('../images/hero_section_bckg.jpg');
-    background-repeat: no-repeat;
-    background-position: right center;
-}
-
-.hero_section {
-    display: flex;
-    flex-direction: column;
-    padding-left: 100px;
-    max-width: 530px;
-    width: 100%;
-}
-
-.brand_clinick {
-    font-size: 18px;
-    font-weight: 400;
-    margin-bottom: 0;
-}
-
-.button_with_descr {
-    align-items: center;
-    max-width: 238px;
-    width: 100%;
-}
-
-.button_description {
-    margin: 14px 18px 0 0;
-    text-align: center;
-    font-size: 12px;
-    line-height: 150%;
-}
-
-.button {
-    padding: 16px 32px;
-    background-color: var(--color-brand);
-    border-radius: 32px;
-    border: 1px solid var(--color-brand);
-    padding: 16px 32px;
-    width: 219px;
-    height: 53px;
-    color: var(--color-primary-light);
-    font-weight: 600;
-    font-size: 16px;
-    transition: color 0.3s, background-color 0.3s;
-}
-
-.button:hover {
-    background-color: transparent;
-    cursor: pointer;
-    color: var(--color-brand);
-}
-
-.hero_title {
-    margin: 16px 0 40px 0;
-    color: var(--color-brand);
-    font-family: var(--third-family);
-    font-size: 140px;
-    font-weight: 700;
-    line-height: 0.8;
-
-}
-
 .accent {
     color: var(--color-brand);
 }
+
 
 /* About company*/
 
@@ -339,6 +155,7 @@ footer {
 }
 
 .procedurce_cards {
+    position: relative;
     padding: 344px 72px 32px 112px;
     border: 1px solid var(--color-brand);
     border-radius: 4px 120px;
@@ -347,6 +164,15 @@ footer {
 
 .procedurce_cards:hover {
     transform: scale(1.05);
+}
+
+.carousel_images{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
 }
 
 .article_text {
