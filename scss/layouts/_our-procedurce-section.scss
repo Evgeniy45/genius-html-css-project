@@ -1,0 +1,54 @@
+.our_procedurce_title {
+    margin-bottom: 48px;
+    text-align: center;
+}
+
+.our_procedurce_container {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+}
+
+.procedurce_cards {
+    position: relative;
+    padding: 344px 72px 32px 112px;
+    border: 1px solid var(--color-brand);
+    border-radius: 4px 120px;
+    overflow: hidden;
+    /* Додаємо цю властивість */
+    transition: transform 0.3s;
+    background: linear-gradient(180deg, rgba(1, 28, 68, 0) 47.4%, rgba(1, 28, 68, 0.73) 82.66%, #011c44 99.06%);
+}
+
+.procedurce_cards:hover {
+    transform: scale(1.05);
+}
+
+.carousel_images {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Щоб зображення коректно вміщувалося в межах контейнера */
+    border-radius: inherit;
+    /* Додаємо, щоб зображення слідувало за формою рамки */
+    z-index: -1;
+}
+
+.article_text {
+    line-height: 118%;
+    color: var(--color-primary-light);
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.procedurce_list {
+    display: flex;
+    gap: 16px;
+}
+
+.procedurce_title {
+    flex-basis: calc((100% - 32px) / 3);
+}

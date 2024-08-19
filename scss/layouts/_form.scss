@@ -1,0 +1,51 @@
+.form_field {
+    margin-bottom: 24px;
+}
+
+.form_input {
+    padding: 18px 32px;
+    border: 2px solid var(--color-secondary-light);
+    border-radius: 32px;
+    background-color: transparent;
+    width: 100%;
+    transition: background-color 0.2s;
+    color: var(--color-primary-light);
+    font-size: 13px;
+    line-height: 1.17;
+}
+
+.form_label {
+    display: block;
+}
+
+.form_input:focus {
+    background-color: var(--color-secondary-light);
+    outline: none;
+}
+
+.form_input::placeholder {
+    color: var(--color-primary-light);
+    font-size: 13px;
+    line-height: 1.17;
+}
+
+.form_button {
+    display: block;
+    margin: 0 auto 8px;
+}
+
+.form_rules {
+    margin: 0 auto;
+    max-width: 208px;
+    font-size: 12px;
+    line-height: 150%;
+    text-align: center;
+    color: var(--color-secondary-light);
+}
+
+.form_rules_link {
+    color: var(--color-secondary-light);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    text-decoration-skip-ink: none;
+}

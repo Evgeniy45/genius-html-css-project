@@ -1,0 +1,47 @@
+.about-us-section {
+    line-height: 173%;
+
+    &__container {
+        display: flex;
+        gap: 40px;
+        }
+
+    &__descr {
+        max-width: 640px;
+        width: 100%;
+    }
+
+    &__title {
+        padding-right: 180px;
+        line-height: 1.2;
+        margin-bottom: 40px;
+    }
+    
+    &__descr p {
+        margin-bottom: 40px;
+    }
+
+    &__images {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__images img {
+        position: relative;
+        display: block;
+        width: 320px;
+        height: 320px;
+        border-radius: 50%;
+        margin-bottom: 20px;
+    }
+
+    &__images img:first-child {
+        bottom: 40px;
+    }
+
+    &__images img:last-child {
+        left: 200px;
+    }
+}

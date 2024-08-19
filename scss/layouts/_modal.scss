@@ -1,0 +1,52 @@
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px 0;
+    transition: opacity 0.3s, visibility 0.3s;
+}
+
+.modal {
+    position: relative;
+    max-width: 720px;
+    width: 100%;
+    max-height: 680px;
+    height: 100%;
+    padding: 42px 144px;
+    background-color: var(--color-primary-dark);
+    background-image: url(../images/footer_background.png);
+    border-radius: 48px;
+    color: var(--color-primary-light);
+    overflow-y: auto;
+}
+
+.modal_close_btn {
+    position: absolute;
+    top: 42px;
+    right: 42px;
+}
+
+.modal_header {
+    margin-bottom: 40px;
+    font-weight: 700;
+    font-size: 64px;
+    text-align: center;
+    color: var(--color-primary-lights);
+    font-family: var(--third-family);
+    line-height: 1.2;
+}
+
+.modal_form_description {
+    margin: 0 auto 32px;
+    max-width: 280px;
+    font-weight: 600;
+    font-size: 22px;
+    text-align: center;
+    line-height: 1.3;
+}

@@ -1,0 +1,41 @@
+.why_do_we_section {
+    background-color: lightblue;
+}
+
+.why_do_we_title {
+    max-width: 500px;
+    margin: 0 auto 48px;
+    text-align: center;
+    line-height: 1.2;
+}
+
+.why_do_we_list {
+    display: flex;
+    justify-content: center;
+    gap: 56px;
+    margin: 0;
+}
+
+.why_we_cards {
+    padding: 24px 32px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 133%;
+    font-weight: 400;
+    background-color: var(--color-primary-light);
+    border-radius: 32px;
+    max-width: 316px;
+    width: 100%;
+    color: #000;
+    box-shadow: 0 4px 4px 0 rgba(168, 198, 245, 0.38);
+    ;
+}
+
+.why_we_cards p {
+    margin-top: 8px;
+    margin-bottom: 0;
+}
+
+.why_do_we_icon {
+    fill: var(--color-brand);
+}

@@ -1,0 +1,89 @@
+.footer {
+    position: relative;
+    padding: 56px 0;
+    background-color: var(--color-primary-dark);
+    background-image: url('../images/footer_background.png');
+
+}
+
+.footer::after {
+    position: absolute;
+    width: 248px;
+    height: 152px;
+    bottom: 0;
+    right: 0;
+    background-image: url(../images/footer_decor.png);
+    background-repeat: no-repeat;
+    content: "";
+}
+
+.footer_container {
+    display: flex;
+    gap: 20px;
+}
+
+.footer_nav,
+.footer_address {
+    display: flex;
+    flex-basis: 50%;
+    gap: 20px;
+}
+
+.footer_logo,
+.footer_menu {
+    flex-grow: 1;
+}
+
+.address_list,
+.footer_menu {
+    margin: 0;
+}
+
+.address_list,
+.politic_defens {
+    flex-grow: 1;
+}
+
+.footer_nav_link {
+    text-decoration: none;
+    color: var(--color-primary-light);
+    transition: color 0.3s;
+}
+
+.footer_nav_link:hover {
+    color: var(--color-brand);
+    cursor: pointer;
+}
+
+.address_link,
+.politic {
+    text-decoration: none;
+    color: var(--color-primary-light);
+    transition: color 0.3s;
+}
+
+.address_link:hover,
+.politic:hover {
+    cursor: pointer;
+    color: var(--color-brand);
+}
+
+footer p {
+    color: var(--color-secondary-light);
+    font-size: 13px;
+}
+
+.address_icon {
+    fill: var(--color-primary-light);
+    transition: fill 0.3s;
+}
+
+.address_icon:hover {
+    cursor: pointer;
+    fill: var(--color-brand);
+}
+
+.footer_address_icons {
+    display: flex;
+    gap: 24px;
+}
